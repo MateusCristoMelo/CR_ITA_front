@@ -26,7 +26,7 @@ function Dashboard() {
 
       const formData = new FormData();
       formData.append('file', selectedFile)
-      let response =  await (await fetch('http://127.0.0.1:8000/core_api/get_data/', {
+      let response =  await (await fetch('https://critaback.herokuapp.com/core_api/get_data/', {
         method:'POST',
         body: formData
       })).json()
